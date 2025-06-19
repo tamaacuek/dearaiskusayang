@@ -10,13 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- <iframe
-      width="0"
-      height="0"
-      src="https://www.youtuberepeater.com/watch?v=koZK67e1C-U#gsc.tab=0"
-      frameborder="0"
-      allowfullscreen
-    ></iframe> -->
     <title>Dear Aisyah Febriana</title>
     <style type="text/tailwindcss">
       @theme {
@@ -24,24 +17,35 @@
       }
     </style>
   </head>
-  <body>
+  <body class="font-poppins text-shadow-lg/30">
     <div
       class="bg-[url(./assets/cakep.jpg)] min-h-screen bg-cover relative bg-center"
     >
-      <h1
-        class="text-6xl font-poppins font-semibold text-end pt-80 pr-50 text-shadow-lg/30 text-white"
+     <div class="text-shadow-lg/30 text-start pt-60 ml-5 text-white lg:ml-20 lg:pt-80">
+         <h1
+        class="lg:text-6xl text-4xl font-semibold mb-2"
       >
         Dear
       </h1>
       <h1
-        class="text-7xl font-poppins font-semibold text-end pr-50 text-shadow-lg/30 text-white"
+        class="lg:text-7xl text-5xl font-semibold mb-5"
       >
         Aisyah Febriana
       </h1>
-    </div>
-    <div class="min-h-screen">
+      <button onclick="playMusic()" class="lg:text-xl border border-2 rounded-xl p-2 lg:p-3">musik buat sayang</button>
+      <audio id="bgmusic" src="./assets/CintaTerakhir.mp3"></audio>
 
+      <script>
+        function playMusic() {
+          const audio = document.getElementById("bgmusic");
+          audio.play();
+        }
+      </script>
+     </div>
     </div>
-    <audio autoplay src="./assets/CintaTerakhir.mp3" type="audio/mp3"></audio>
+    <div class="min-h-screen bg-[url(./assets/gwencana.JPG)] bg-contain">
+        <h1 class="lg:text-6xl text-3xl font-bold text-white text-center pt-100 lg:pt-120">SAYANGGGG KANGENNN 😕😕</h1>
+    </div>
+    </div>
   </body>
 </html>
